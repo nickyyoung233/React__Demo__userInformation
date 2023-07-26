@@ -16,6 +16,8 @@ body {
   display: flex;
   margin: 1rem auto;
   flex-direction: column;
+  border-radius: 4px;
+  justify-content: space-between;
 }
 
 .button {
@@ -30,7 +32,6 @@ body {
 .form {
   padding: 1rem;
   max-width: 30rem;
-  border-radius: 4px;
   background: linear-gradient(180deg, #307e6c, #2b996d);
 }
 
@@ -70,4 +71,37 @@ body {
   padding: 0.2rem;
   margin: 0.2rem;
   border: 1px solid #76c0ae;
+}
+
+.error {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 12rem;
+  overflow: hidden;
+  border: 1px solid #76c0ae;
+  background-color: #fff;
+}
+
+.errorHeader {
+  height: 3rem;
+  line-height: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-indent: 0.5rem;
+  background: linear-gradient(180deg, #307e6c, #2b996d);
+}
+.error p {
+  align-self: center;
+  color: #2b996d;
+}
+.error button {
+  color: #fff;
+  background-color: #2b996d;
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
