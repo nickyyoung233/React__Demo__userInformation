@@ -1,11 +1,11 @@
-.error {
+.error-backdrop {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #ccccccbd;
+  background-color: rgba(255, 255, 255, 0.7);
 }
-.errorContainer {
+.error {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -16,7 +16,7 @@
   background-color: #fff;
 }
 
-.errorHeader {
+.error-head {
   height: 3rem;
   line-height: 3rem;
   font-family: "Roboto Condensed", sans-serif;
@@ -30,10 +30,12 @@
   align-self: center;
   color: #2b996d;
 }
+.error footer {
+  align-self: flex-end;
+}
 .error button {
   color: #fff;
   background-color: #2b996d;
-  align-self: flex-end;
   margin-bottom: 1rem;
   margin-right: 1rem;
 }

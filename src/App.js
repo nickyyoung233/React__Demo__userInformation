@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 
 import Card from "./components/UI/Card";
 
@@ -23,13 +24,13 @@ function App() {
   };
   if (userInfo.length > 0) showList = true;
   return (
-    <div>
+    <Fragment>
       <Card>
         <UserInput manageUserInfo={manageUserInfo} />
         {showList && <InfoList userInfo={userInfo} />}
       </Card>
       {isError && <ErrorMsg setIsError={setIsError} />}
-    </div>
+    </Fragment>
   );
 }
 

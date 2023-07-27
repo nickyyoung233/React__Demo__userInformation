@@ -22,7 +22,7 @@ const UserInput = ({ manageUserInfo }) => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    
+
     manageUserInfo({
       username: userInfo.username,
       age: userInfo.age,
@@ -47,7 +47,7 @@ const UserInput = ({ manageUserInfo }) => {
           min="0"
           id="age"
         />
-        <Button>Add User</Button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   );

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
 import styles from "./ErrorMsg.module.css";
@@ -7,13 +8,16 @@ const ErrorMsg = ({ setIsError }) => {
     setIsError(false);
   };
   return (
-    <div onClick={onClickHandler} className={styles.error}>
-      <Card className={styles.errorContainer}>
-        <header className={styles.errorHeader}>Invalid Input</header>
+    <Fragment>
+      <div onClick={onClickHandler} className={styles["error-backdrop"]} />
+      <Card className={styles.error}>
+        <header className={styles["error-head"]}>Invalid Input</header>
         <p>Please enter a valid name and age(non-empty values).</p>
-        <Button onClick={onClickHandler}>Okay</Button>
+        <footer>
+          <Button onClick={onClickHandler}>Okay</Button>
+        </footer>
       </Card>
-    </div>
+    </Fragment>
   );
 };
 export default ErrorMsg;
