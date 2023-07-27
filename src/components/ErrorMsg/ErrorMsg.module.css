@@ -14,6 +14,7 @@
   overflow: hidden;
   border: 1px solid #76c0ae;
   background-color: #fff;
+  z-index: 1;
 }
 
 .error-head {
