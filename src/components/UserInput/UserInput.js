@@ -20,11 +20,11 @@ const UserInput = ({ manageUserInfo }) => {
   return (
     <Card className={styles.form}>
       <form onSubmit={submitHandler}>
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username">用户名</label>
         <input type="text" id="username" ref={nameInput} />
-        <label htmlFor="age">Age(Years)</label>
+        <label htmlFor="age">年龄（岁）</label>
         <input type="number" min="0" id="age" ref={ageInput} />
-        <Button type="submit">Add User</Button>
+        <Button type="submit">添加用户</Button>
       </form>
     </Card>
   );

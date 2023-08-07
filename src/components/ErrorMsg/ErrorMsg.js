@@ -13,8 +13,8 @@ const ErrorMsg = ({ setIsError }) => {
   );
   const Modal = (
     <Card className={styles.error}>
-      <header className={styles["error-head"]}>Invalid Input</header>
-      <p>Please enter a valid name and age(non-empty values).</p>
+      <header className={styles["error-head"]}>输入格式有误</header>
+      <p>请输入有效的用户信息（不能为空）</p>
       <footer>
         <Button onClick={onClickHandler}>Okay</Button>
       </footer>

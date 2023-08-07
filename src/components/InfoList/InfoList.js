@@ -7,7 +7,7 @@ const InfoList = ({ userInfo }) => {
       <ul className={styles.userList}>
         {userInfo.map((item) => (
           <li className={styles.userItem} key={item.username + item.age}>
-            {item.username}({item.age} years old)
+            {item.username}({item.age}岁)
           </li>
         ))}
       </ul>
